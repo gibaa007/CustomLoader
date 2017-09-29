@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <com.tt.whorlviewlibrary.WhorlView
+        android:id="@+id/whorl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.tt.whorlviewlibrary.WhorlView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:whorlview_circle_speed="50"
+        app:whorlview_circle_colors="#F14336_#000000_#4CAF50_#5677fc_#F44336_#4CAF50_#4285F4_#339933_#fbbc05_#ea3f3f"
+        app:whorlview_sweepAngle="45" />
+
+    <com.tt.whorlviewlibrary.WhorlView
+        android:id="@+id/whorl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:whorlview_circle_colors="#4285F4_#339933_#fbbc05_#ea3f3f"
+        app:whorlview_circle_speed="600"
+        app:whorlview_parallax="fast"
+        app:whorlview_strokeWidth="8"
+        app:whorlview_sweepAngle="300" />
+
+    <com.tt.whorlviewlibrary.WhorlView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:whorlview_circle_colors="#4285F4_#339933_#fbbc05_#ea3f3f"
+        app:whorlview_circle_speed="300"
+        app:whorlview_parallax="fast"
+        app:whorlview_strokeWidth="5"
+        app:whorlview_sweepAngle="100" />
+
+    <com.tt.whorlviewlibrary.WhorlView
+        android:id="@+id/whorl3"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:whorlview_circle_speed="400"
+        app:whorlview_parallax="fast"
+        app:whorlview_strokeWidth="10"
+        app:whorlview_sweepAngle="100" />
+
+    <com.tt.whorlviewlibrary.WhorlView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:whorlview_circle_speed="200"
+        app:whorlview_parallax="fast"
+        app:whorlview_strokeWidth="10"
+        app:whorlview_sweepAngle="100" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="gone" />
+
+</LinearLayout>
